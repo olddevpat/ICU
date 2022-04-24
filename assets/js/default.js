@@ -43,8 +43,7 @@ socket.on('move', function (msg) {
 // Speech recognition
 
 $( document ).ready(function() {
-    console.log( session );
-    let speechRecognition = window.webkitSpeechRecognition;
+let speechRecognition = window.webkitSpeechRecognition;
 let recognition = new speechRecognition();
 let instructions = $('.instructions');
 let content = '';

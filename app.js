@@ -30,9 +30,6 @@ app.get('/login', function(req, res) {
 });
 
 app.post('/classroom', function(req, res) {
-    req.session.counter = counter;
-    counter +=1;
-    req.session.users = users;
     res.render('classroom');
 });
 
